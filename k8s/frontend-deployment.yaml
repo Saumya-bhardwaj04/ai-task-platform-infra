@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: bhardwajsaumya/ai-task-frontend:21e4fdc1ab0914b6c9c144c1ee80e14c691b31f0
+          image: bhardwajsaumya/ai-task-frontend:3844949356ba70c3fa6038d1026907770cde1239
           ports:
             - containerPort: 8080
           resources:
