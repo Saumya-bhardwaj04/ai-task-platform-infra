@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: worker
-          image: your-dockerhub-username/ai-task-worker:latest
+          image: bhardwajsaumya/ai-task-worker:latest
           envFrom:
             - configMapRef:
                 name: app-config

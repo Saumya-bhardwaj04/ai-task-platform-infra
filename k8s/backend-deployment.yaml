@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: your-dockerhub-username/ai-task-backend:latest
+          image: bhardwajsaumya/ai-task-backend:latest
           ports:
             - containerPort: 5000
           envFrom:
