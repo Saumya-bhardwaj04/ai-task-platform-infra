@@ -3,23 +3,21 @@ kind: Ingress
 metadata:
   name: app-ingress
   namespace: ai-task-platform
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /$2
 spec:
   ingressClassName: nginx
   rules:
     - host: ai-task-platform.local
       http:
         paths:
-          - path: /api(/|$)(.*)
-            pathType: ImplementationSpecific
+          - path: /api
+            pathType: Prefix
             backend:
               service:
                 name: backend
                 port:
                   number: 5000
-          - path: /()(.*)
-            pathType: ImplementationSpecific
+          - path: /
+            pathType: Prefix
             backend:
               service:
                 name: frontend
