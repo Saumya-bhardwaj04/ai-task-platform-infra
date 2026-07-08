@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: backend
-          image: bhardwajsaumya/ai-task-backend:37e351d923897a0a2cf384bbef048db773b3dd68
+          image: bhardwajsaumya/ai-task-backend:a432be1bfd9ab07691a48bec9bd3354c0dafad1e
           ports:
             - containerPort: 5000
           envFrom:

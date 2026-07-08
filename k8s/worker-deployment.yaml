@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: worker
-          image: bhardwajsaumya/ai-task-worker:37e351d923897a0a2cf384bbef048db773b3dd68
+          image: bhardwajsaumya/ai-task-worker:a432be1bfd9ab07691a48bec9bd3354c0dafad1e
           envFrom:
             - configMapRef:
                 name: app-config
